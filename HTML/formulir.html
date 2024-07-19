@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir</title>
+  </head>
+  <body>
+    <form action="/submit" method="get" align="center">
+      <h3>USING GET</h3>
+      <div>
+        <labe for="username">Username</labe>
+        <input type="text" name="username" />
+        <label for="email">Email</label>
+        <input type="email" name="email" />
+        <label for="password">Password</label>
+        <input type="password" name="password" />
+        <label for="number">Number</label>
+        <input type="number" name="number" />
+        <label for="color">Color</label>
+        <input type="color" name="color" />
+        <button type="button">Button Biasa</button>
+        <input type="button" value="Input type Button" />
+        <button type="submit">Submit</button>
+    </form>
+      </div>
+      <br><hr>
+      <div>
+    <form action="/submit" method="post" align="center">
+      <h3>USING POST</h3>
+      <div>
+        <labe for="username">Username</labe>
+        <input type="text" name="username" />
+        <label for="email">Email</label>
+        <input type="email" name="email" />
+        <label for="password">Password</label>
+        <input type="password" name="password" />
+        <button type="submit">Submit</button>
+    </form>
+</div>
+<br><hr>
+<form action="/submmit" method="get" align="center">
+    <h3>Adding Radio, Dropdown and Checkbox </h3>
+    <div>
+        <label for="jenis">Jenis Pakaian</label>
+        <input type="radio" name="jenis" id="jenis" value="kaos" checked>
+        <label for="jenis"  >Kaos</label>
+        <input type="radio" name="jenis" id="jenis" value="celana">
+        <label for="jenis">Celana</label>
+    </div>
+    <div>
+        <label for="jenis">Ukuran</label>
+       <select name="ukuran" id="">
+        <option>--</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L" selected>L</option>
+       </select>
+    </div>
+    <div>
+        
+        <input type="checkbox" checked name="term" id="term" value='yes'><label for="term">Saya menyatakan data yg di isi adalah benar</label>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+  </body>
+</html>
