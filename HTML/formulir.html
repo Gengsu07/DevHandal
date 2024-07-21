@@ -39,14 +39,18 @@
     </form>
 </div>
 <br><hr>
+<!-- ------------------------------------ -->
 <form action="/submmit" method="get" align="center">
     <h3>Adding Radio, Dropdown and Checkbox </h3>
     <div>
-        <label for="jenis">Jenis Pakaian</label>
-        <input type="radio" name="jenis" id="jenis" value="kaos" checked>
-        <label for="jenis"  >Kaos</label>
-        <input type="radio" name="jenis" id="jenis" value="celana">
-        <label for="jenis">Celana</label>
+      
+        <legend for="jenis">Jenis Pakaian</legend>
+          <input type="radio" name="jenis" id="jenis" value="kaos" checked>
+          <label for="jenis"  >Kaos</label>
+
+          <input type="radio" name="jenis" id="jenis" value="celana">
+          <label for="jenis">Celana</label>
+        
     </div>
     <div>
         <label for="jenis">Ukuran</label>
@@ -57,11 +61,31 @@
         <option value="L" selected>L</option>
        </select>
     </div>
+
+    <!-- textarea -->
+    <div>
+        <legend for="catatan">Catatan</legend>
+      <textarea name="catatan" id="catatan" cols="30" rows="5" placeholder="Tuliskan catatan"></textarea>
+    </div>
+
+    <!-- checkbox -->
     <div>
         
         <input type="checkbox" checked name="term" id="term" value='yes'><label for="term">Saya menyatakan data yg di isi adalah benar</label>
     </div>
     <button type="submit">Submit</button>
 </form>
+
+<br>
+<hr>
+<form action="'validasi" align="center">
+  <h3>Feedback</h3>
+  <label for="feedback">Kritik dan Saran (required) </label>
+  <input type="text" name="feedback" id="feedback" required minlength="7" maxlength="255">
+  <label for="rating">Berikan bintang (required) </label>
+  <input type="number" name="rating" id="rating" required min="3" max="5">
+  <button type="submit">Submit</button>
+</form>
+
   </body>
 </html>
