@@ -220,3 +220,25 @@ div {
 
 Jadi elemen secara default ada yang inline dan block elemen. berikut lengkapnya dari docs
 [Block Element | Inline Element] (https://www.w3schools.com/html/html_blocks.asp)
+
+### Flexbox
+
+[here](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+![1722293410002](image/readme/1722293410002.png)
+
+- flex-direction
+- justify content
+- align-content
+
+Align content vs Align items
+Align content untuk multi line sedangkan align item itu hanya untuk masing-masing row/column. Jadi kalau cman sebaris gapap pakai align items tpi kalau mutlibaris atau pakai wrap pakai align content jadi posisi content secara keseluruhan yg digunakan
+
+#### Flex Sizing
+
+![1722296155038](image/readme/1722296155038.png)
+
+-flex basis memberikan ukuran basis dengan arah sesuai flex nya
+-flex grow untuk mengalokasikan sisa space dengan angka2 sesuai pembagiannya
+-flex shrink sebaliknya jika defisit space atau container lbh kecil drpd items maka mana yg akan dikurangi sesuai angka2
+
+#### Flex Ringkas/Shorthand
