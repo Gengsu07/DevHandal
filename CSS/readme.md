@@ -241,4 +241,34 @@ Align content untuk multi line sedangkan align item itu hanya untuk masing-masin
 -flex grow untuk mengalokasikan sisa space dengan angka2 sesuai pembagiannya
 -flex shrink sebaliknya jika defisit space atau container lbh kecil drpd items maka mana yg akan dikurangi sesuai angka2
 
-#### Flex Ringkas/Shorthand
+### Responsive Design
+
+Agar tampilan website tetap bagus di berbagai ukuran layar/device yang mengakses
+
+[docs](https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp)
+
+```CSS
+@media screen and (min-width:800px) and (max-width:1200px) {
+  .container {
+    width:80%
+  }
+}
+```
+
+````CSS
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+```
+````
