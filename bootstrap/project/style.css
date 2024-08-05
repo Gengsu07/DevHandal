@@ -1,0 +1,22 @@
+body {
+  background-color: rgb(227, 246, 239);
+}
+.homeimage {
+  max-width: auto;
+  max-height: 400px;
+  object-fit: contain;
+  display: block;
+}
+
+#places {
+  background-color: white;
+}
+
+@media screen and (max-width: 576px) {
+  .homeimage {
+    width: 100%;
+    max-height: auto;
+    object-fit: contain;
+    display: block;
+  }
+}
